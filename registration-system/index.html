@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automation Secure Registration Form</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="card" role="form">
+
+
+        <h2 class="main-title">
+            AUTOMATION SECURE & FAST REGISTRATION FORM
+        </h2>
+
+        <div id="topError" class="top-error"></div>
+
+        <form id="regForm">
+
+            <div class="row">
+                <div>
+                    <label>First Name *</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="fname">
+                    </div>
+                    <small></small>
+                </div>
+
+                <div>
+                    <label>Last Name *</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="lname">
+                    </div>
+                    <small></small>
+                </div>
+            </div>
+
+            <label>Email *</label>
+            <div class="input-icon">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="email">
+            </div>
+            <small></small>
+
+            <label>Phone Number *</label>
+            <div class="input-icon">
+                <i class="fa fa-phone"></i>
+                <input type="text" id="phone">
+            </div>
+            <small></small>
+
+            <label>Age</label>
+            <input type="number" id="age">
+
+            <label>Gender *</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <small id="genderError"></small>
+
+            <label>Address</label>
+            <textarea id="address"></textarea>
+
+            <div class="row">
+                <select id="country">
+                    <option value="">Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                </select>
+
+                <select id="state"></select>
+                <select id="city"></select>
+            </div>
+
+            <label>Password *</label>
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password">
+            </div>
+            <div id="strength" class="strength"></div>
+
+            <label>Confirm Password *</label>
+            <input type="password" id="confirmPassword">
+            <small></small>
+
+            <label class="terms">
+                <input type="checkbox" id="terms">
+                I agree to Terms & Conditions *
+            </label>
+            <small id="termsError"></small>
+
+            <button type="submit" id="submitBtn" disabled>
+                REGISTER
+            </button>
+
+            <div id="successMsg" class="success"></div>
+
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
